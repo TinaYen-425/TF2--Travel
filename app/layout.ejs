@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>
+    <%- title %>
+  </title>
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet">
+  <!-- all.css -->
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>
+  <div class="container mb-4 mb-md-1 mb-sm-0 bg-white ">
+    <div
+      class="header d-flex justify-between align-center justify-sm-center pt-7 pt-md-4 px-27 ps-md-10 pe-md-5 pb-4 pb-md-5 pb-sm-0 flex-sm-wrap px-sm-0 mb-sm-3 box-md-shadow box-shadow-sm-none">
+      <h1 class="logo mb-sm-4">Taiwan Tourguide</h1>
+      <div class="d-sm-block  box-sm-shadow rounded-sm-m">
+        <ul class="menu d-flex px-sm-7 py-sm-3 justify-sm-between">
+          <li class="menu-item me-7 me-sm-12">
+            <a class="d-flex align-center text-primary text-sm-grey"
+              href="./index.html">
+              <div class="mainPic">
+                <div class="menu-primary me-2 d-sm-none">
+                  <div class="menu-primary-inner"></div>
+                </div>
+                <h2
+                  class="topic font-s border-bottom-primary border-bottom-sm-none">
+                  台灣景點</h2>
+            </a>
+          </li>
+          <li class="menu-item me-7 me-sm-12">
+            <a class="d-flex align-center text-secondary text-sm-grey" href="#">
+              <div class="mainPic">
+                <div class="menu-secondary me-2 d-sm-none">
+                  <div class="menu-secondary-inner"></div>
+                </div>
+              </div>
+              <h2
+                class="topic font-s border-bottom-secondary border-bottom-sm-none">
+                美食住宿</h2>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a class="d-flex align-center text-third text-sm-grey"
+              href="./transport.html">
+              <div class="mainPic">
+                <div class="menu-third me-2 d-sm-none">
+                  <div class="menu-third-inner"></div>
+                </div>
+              </div>
+              <h2
+                class="topic font-s border-bottom-third border-bottom-sm-none">
+                景點交通</h2>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <%- contents %>
+
+    <footer class="footer text-center text-grey font-secondary">
+      <p>Taiwan Tourguide © Code: Tina Yen / Design: KT</p>
+    </footer>
+  
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsSHA/3.2.0/sha.js"></script>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+</body>
+
+</html>

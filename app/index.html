@@ -1,0 +1,595 @@
+---
+title: 台灣旅遊景點
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+<div
+    class=" px-4 box-shadow box-shadow-md-none box-sm-shadow d-md-flex justify-md-center align-md-center justify-sm-start bg-white bg-sm-white bg-md-grey pb-5 pb-md-5 mb-1 mb-md-0 mb-sm-1">
+    <div
+        class="banner d-flex justify-center align-center pt-md-11 pt-sm-0 ps-md-15 ps-sm-0">
+        <div class="">
+            <h2
+                class="banner-header font-bold font-xxl text-primary font-secondary text-shadow d-md-none d-sm-none p-relative">
+                <span class="text-white inline-block me-2">Welc</span>
+                <span class="inline-block text-white">me</span>
+                <span class="inline-block text-white me-4">t</span>
+                <span class="">Ta wan</span>
+                <div class="ellipse p-absolute">
+                    <div class="ellipse-inside"></div>
+                </div>
+                <div class="square d-md-none p-absolute">
+                    <div class="spuare-inside"></div>
+                </div>
+                <div class="i-icon  d-md-none p-absolute">
+                    <div class="i-triangle"></div>
+                </div>
+                <p class="text-white mb-4 font-s d-md-none d-sm-none">
+                    台北、台中、台南、屏東、宜蘭……遊遍台灣</p>
+            </h2>
+            <div class="p-relative d-md-flex justify-md-center align-md-center">
+                <div class="form">
+                    <div class="search d-flex align-star mb-3 mb-sm-0">
+                        <input class="form-control form-control-find d-sm-none"
+                            type="text" name="" id="" placeholder="搜尋關鍵字">
+                        <div class="icon-pic"><a class="icon-find" href="#"><img
+                                    class="icon-pic-find p-absolute"
+                                    src="./assets/images/Frame 42.png"
+                                    alt="frame_42"></a></div>
+                    </div>
+                    <div class="select d-flex align-star">
+                        <div class="form-control-select d-flex justify-between">
+                            <select
+                                class="form-control form-control-item font-m me-sm-2"
+                                name="" id="">
+                                <option value="類 別" disabled selected hidden>類 別
+                                </option>
+                                <option class="bg-white" value="美食">美食</option>
+                                <option value="住宿">住宿</option>
+                            </select>
+                            <select
+                                class="regionSelect form-control form-control-item font-m"
+                                name="regionSelect" id="">
+                                <option value="不分縣市" disabled selected hidden>
+                                    不分縣市
+                                </option>
+                                <!-- 下拉式選單 -->
+                            </select>
+                        </div>
+                        <div class="icon-pic">
+                            <a href="#"><img
+                                    class="icon-pic-location p-absolute ms-1"
+                                    src="./assets/images/Frame 105.png"
+                                    alt="frame_105"></a>
+                        </div>
+                        <div class="d-sm-block d-none d-md-none ms-sm-2"><a
+                                class="admit" href="#">送出</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div
+    class=" bg-grey pt-21 pt-md-4 pt-sm-10 ps-27 pe-14 ps-md-16 pe-md-0 ps-sm-4">
+    <div class="city mb-11 mb-md-8 mb-sm-6">
+        <h2 class="mb-3 font-l font-md-s">
+            <div class="tag-primary inline-block me-3 me-md-2 ms-sm-3">
+            </div>熱門城市
+        </h2>
+        <div class="d-flex">
+            <div class="x-auto w-9">
+                <ul class="cardGroup d-flex fix pb-4">
+                    <li class="Group1 d-flex me-3 me-md-1">
+                        <div class="card p-relative box-shadow me-3 me-md-1">
+                            <img class="bg-white big d-flex"
+                                src="./assets/images/台北市_pic.png" alt="台北市_pic">
+                            <div
+                                class="locate-big z-index p-absolute d-flex flex-column justify-center align-center">
+                                <div class="mb-2"><img class=""
+                                        src="./assets/images/gps.png" alt=""
+                                        class="gps"></div>
+                                <h3 class="font-l font-md-s"><a href="#"
+                                        class="text-white">台北市</a></h3>
+                            </div>
+                            <div class="opacity locate-big p-absolute">
+                            </div>
+                            </img>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <div class="card p-relative box-shadow mb-1">
+                                <img class="bg-white small d-flex"
+                                    src="./assets/images/新北市＿pic.png"
+                                    alt="新北市_pic">
+                                <div
+                                    class="locate-small z-index p-absolute d-flex flex-column justify-center align-center">
+                                    <div class="mb-2"><img class=""
+                                            src="./assets/images/gps.png" alt=""
+                                            class="gps"></div>
+                                    <h3 class="font-l font-md-s"><a href="#"
+                                            class="text-white">新北市</a></h3>
+                                </div>
+                                <div class="opacity locate-small p-absolute">
+                                </div>
+                                </img>
+                            </div>
+                            <div class="card box-shadow p-relative">
+                                <img class="bg-white small d-flex"
+                                    src="./assets/images/桃園市_pic.png"
+                                    alt="桃園市_pic">
+                                <div
+                                    class="locate-small z-index p-absolute d-flex flex-column justify-center align-center">
+                                    <div class="mb-2"><img class=""
+                                            src="./assets/images/gps.png" alt=""
+                                            class="gps"></div>
+                                    <h3 class="font-l font-md-s"><a href="#"
+                                            class="text-white">桃園市</a></h3>
+                                </div>
+                                <div class="opacity locate-small p-absolute">
+                                </div>
+                                </img>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="Group1 d-flex me-3 me-md-1">
+                        <div class="card p-relative box-shadow me-3 me-md-1">
+                            <img class="bg-white big d-flex"
+                                src="./assets/images/新竹市_pic.png" alt="新竹市_pic">
+                            <div
+                                class="locate-big z-index p-absolute d-flex flex-column justify-center align-center">
+                                <div class="mb-2"><img class=""
+                                        src="./assets/images/gps.png" alt=""
+                                        class="gps"></div>
+                                <h3 class="font-l font-md-s"><a href="#"
+                                        class="text-white">新竹市</a></h3>
+                            </div>
+                            <div class="opacity locate-big p-absolute">
+                            </div>
+                            </img>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <div class="card p-relative box-shadow mb-1">
+                                <img class="bg-white small d-flex"
+                                    src="./assets/images/台中市_pic.png"
+                                    alt="台中市_pic">
+                                <div
+                                    class="locate-small z-index p-absolute d-flex flex-column justify-center align-center">
+                                    <div class="mb-2"><img class=""
+                                            src="./assets/images/gps.png" alt=""
+                                            class="gps"></div>
+                                    <h3 class="font-l font-md-s"><a href="#"
+                                            class="text-white">台<span
+                                                class="inline-block ms-4">中</span></a>
+                                    </h3>
+                                </div>
+                                <div class="opacity locate-small p-absolute">
+                                </div>
+                                </img>
+                            </div>
+                            <div class="card box-shadow p-relative">
+                                <img class="bg-white small d-flex"
+                                    src="./assets/images/南投市_pic.png"
+                                    alt="南投市_pic">
+                                <div
+                                    class="locate-small z-index p-absolute d-flex flex-column justify-center align-center">
+                                    <div class="mb-2"><img class=""
+                                            src="./assets/images/gps.png" alt=""
+                                            class="gps"></div>
+                                    <h3 class="font-l font-md-s"><a href="#"
+                                            class="text-white">南<span
+                                                class="inline-block ms-3">投</span></a>
+                                    </h3>
+                                </div>
+                                <div class="opacity locate-small p-absolute">
+                                </div>
+                                </img>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="Group1 d-flex">
+                        <div class="card p-relative box-shadow me-3 me-md-1">
+                            <img class="bg-white big d-flex"
+                                src="./assets/images/嘉義市_pic.png" alt="嘉義市_pic">
+                            <div
+                                class="locate-big z-index p-absolute d-flex flex-column justify-center align-center">
+                                <div class="mb-2"><img class=""
+                                        src="./assets/images/gps.png" alt=""
+                                        class="gps"></div>
+                                <h3 class="font-l font-md-s"><a href="#"
+                                        class="text-white">嘉<span
+                                            class="inline-block ms-3">義</span></a>
+                                </h3>
+                            </div>
+                            <div class="opacity locate-big p-absolute">
+                            </div>
+                            </img>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <div class="card p-relative box-shadow mb-1">
+                                <img class="bg-white small d-flex"
+                                    src="./assets/images/新北市＿pic.png"
+                                    alt="新北市_pic">
+                                <div
+                                    class="locate-small z-index p-absolute d-flex flex-column justify-center align-center">
+                                    <div class="mb-2"><img class=""
+                                            src="./assets/images/gps.png" alt=""
+                                            class="gps"></div>
+                                    <h3 class="font-l font-md-s"><a href="#"
+                                            class="text-white">新北市</a></h3>
+                                </div>
+                                <div class="opacity locate-small p-absolute">
+                                </div>
+                                </img>
+                            </div>
+                            <div class="card box-shadow p-relative">
+                                <img class="bg-white small d-flex"
+                                    src="./assets/images/桃園市_pic.png"
+                                    alt="桃園市_pic">
+                                <div
+                                    class="locate-small z-index p-absolute d-flex flex-column justify-center align-center">
+                                    <div class="mb-2"><img class=""
+                                            src="./assets/images/gps.png" alt=""
+                                            class="gps"></div>
+                                    <h3 class="font-l font-md-s"><a href="#"
+                                            class="text-white">桃園市</a></h3>
+                                </div>
+                                <div class="opacity locate-small p-absolute">
+                                </div>
+                                </img>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="scroll p-relative d-md-none w-1">
+                <div class="right p-absolute"></div>
+            </div>
+        </div>
+    </div>
+    <div class="activity mb-8 mb-md-16 mb-sm-14">
+        <h2 class="mb-3 mb-md-4 font-l font-md-s">
+            <div class="tag-primary inline-block me-3 me-md-2 ms-sm-3">
+            </div>熱門活動
+        </h2>
+        <ul
+            class="activityGroup d-flex flex-wrap justify-between pe-13 ps-md-3 pe-md-19 ps-sm-3 pe-sm-7">
+            <li class="act-items p-4 bg-white box-shadow mb-12 mb-md-4">
+                <a href="#" class="d-flex">
+                    <div class="card-pic me-4"><img
+                            src="./assets/images/act_1.png" alt="act_1">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="font-m mb-3 font-md-s mb-md-9">
+                            合歡山國際暗空公園-星空清境跨年活動</h3>
+                        <p class="text-grey font-s mb-3 d-md-none ">
+                            南投縣與各單位多年於合歡山舉辦清境高山<br>跨年晚會活動，今年將活動主軸由傳統跨年<br>晚會轉化成為台灣高山星空遊程之體驗活<br>動，以剛通過美國IDA認證的華語區第一座國<br>際暗空公園作為宣傳主題，在擁有東南的的...
+                        </p>
+                        <div
+                            class="card-bottom d-flex align-center justify-between px-1">
+                            <div class="d-flex align-center">
+                                <div class="me-3 me-md-2"><img
+                                        src="./assets/images/gps_pink.png"
+                                        alt="gps_pink"></div>
+                                <div class="font-s">南投縣 仁愛鄉</div>
+                            </div>
+                            <input type="submit"
+                                class="act-btn d-md-none text-primary font-s"
+                                value="活動詳情">
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="act-items p-4 bg-white box-shadow mb-12 mb-md-4">
+                <a href="#" class="d-flex">
+                    <div class="card-pic me-4"><img
+                            src="./assets/images/act_1.png" alt="act_1">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="font-m mb-3 font-md-s mb-md-9">
+                            合歡山國際暗空公園-星空清境跨年活動</h3>
+                        <p class="text-grey font-s mb-3 d-md-none">
+                            南投縣與各單位多年於合歡山舉辦清境高山<br>跨年晚會活動，今年將活動主軸由傳統跨年<br>晚會轉化成為台灣高山星空遊程之體驗活<br>動，以剛通過美國IDA認證的華語區第一座國<br>際暗空公園作為宣傳主題，在擁有東南的的...
+                        </p>
+                        <div
+                            class="card-bottom d-flex align-center justify-between px-1">
+                            <div class="d-flex align-center">
+                                <div class="me-3 me-md-2"><img
+                                        src="./assets/images/gps_pink.png"
+                                        alt="gps_pink"></div>
+                                <div class="font-s">南投縣 仁愛鄉</div>
+                            </div>
+                            <input type="submit"
+                                class="act-btn d-md-none text-primary font-s"
+                                value="活動詳情">
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="act-items p-4 bg-white box-shadow mb-sm-4">
+                <a href="#" class="d-flex">
+                    <div class="card-pic me-4"><img
+                            src="./assets/images/act_1.png" alt="act_1">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="font-m mb-3 font-md-s mb-md-9">
+                            合歡山國際暗空公園-星空清境跨年活動</h3>
+                        <p class="text-grey font-s mb-3 d-md-none">
+                            南投縣與各單位多年於合歡山舉辦清境高山<br>跨年晚會活動，今年將活動主軸由傳統跨年<br>晚會轉化成為台灣高山星空遊程之體驗活<br>動，以剛通過美國IDA認證的華語區第一座國<br>際暗空公園作為宣傳主題，在擁有東南的的...
+                        </p>
+                        <div
+                            class="card-bottom d-flex align-center justify-between px-1">
+                            <div class="d-flex align-center">
+                                <div class="me-3 me-md-2"><img
+                                        src="./assets/images/gps_pink.png"
+                                        alt="gps_pink"></div>
+                                <div class="font-s">南投縣 仁愛鄉</div>
+                            </div>
+                            <input type="submit"
+                                class="act-btn d-md-none text-primary font-s"
+                                value="活動詳情">
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="act-items p-4 bg-white box-shadow">
+                <a href="#" class="d-flex">
+                    <div class="card-pic me-4"><img
+                            src="./assets/images/act_1.png" alt="act_1">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="font-m mb-3 font-md-s mb-md-9">
+                            合歡山國際暗空公園-星空清境跨年活動</h3>
+                        <p class="text-grey font-s mb-3 d-md-none">
+                            南投縣與各單位多年於合歡山舉辦清境高山<br>跨年晚會活動，今年將活動主軸由傳統跨年<br>晚會轉化成為台灣高山星空遊程之體驗活<br>動，以剛通過美國IDA認證的華語區第一座國<br>際暗空公園作為宣傳主題，在擁有東南的的...
+                        </p>
+                        <div
+                            class="card-bottom d-flex align-center justify-between px-1">
+                            <div class="d-flex align-center">
+                                <div class="me-3 me-md-2"><img
+                                        src="./assets/images/gps_pink.png"
+                                        alt="gps_pink"></div>
+                                <div class="font-s">南投縣 仁愛鄉</div>
+                            </div>
+                            <input type="submit"
+                                class="act-btn d-md-none text-primary font-s"
+                                value="活動詳情">
+                        </div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+        <div class="d-flex justify-center align-center">
+            <ul
+                class="pagination pagination-act d-flex justify-start align-center flex-wrap pe-13 ps-md-3 pe-md-19">
+                <li class="pagination-item mb-2">1</li>
+                <li class="pagination-item mb-2">2</li>
+                <li class="pagination-item mb-2">3</li>
+                <li class="pagination-item mb-2">4</li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="restarunt pb-md-7 pb-12">
+        <h2 class="mb-3 mb-md-4 font-l font-md-s">
+            <div class="tag-secondary inline-block me-3 me-md-2 ms-sm-3">
+            </div>熱門餐飲
+        </h2>
+        <ul
+            class="restaruntGroup d-flex flex-wrap justify-between pe-13 pe-md-15 ps-sm-3 pe-sm-7">
+            <li class="res-item bg-white p-3 box-shadow">
+                <a class="inline-block" href="#">
+                    <div class="res-pic mb-2"><img class="res-pic"
+                            src="./assets/images/restarunt_1.png" alt="正濱漁港懷舊碼">
+                    </div>
+                    <h3 class="font-s mb-7 mb-md-1 text-height">正濱漁港懷舊碼頭
+                    </h3>
+                    <div class="d-flex align-center">
+                        <div class="gps-pic me-1"><img
+                                src="./assets/images/gps_pink2.png" alt="gps">
+                        </div>
+                        <div class="font-xs text-third">基隆市中正區</div>
+                    </div>
+                </a>
+            </li>
+            <li class="res-item bg-white p-3 box-shadow">
+                <a class="inline-block" href="#">
+                    <div class="res-pic mb-2"><img
+                            src="./assets/images/restarunt_2.png"
+                            alt="馬蹄蛤生態休閒園區"></div>
+                    <h3 class="font-s mb-7 mb-md-1 text-height"><span
+                            class="d-md-none">雲林 /
+                            馬蹄蛤生態休閒園區(獲選參加2010台灣美食展...</span><span
+                            class="d-none d-md-block">正濱漁港懷舊碼頭</span></h3>
+                    <div class="d-flex align-center">
+                        <div class="gps-pic me-1"><img
+                                src="./assets/images/gps_pink2.png" alt="gps">
+                        </div>
+                        <div class="font-xs text-third">基隆市中正區</div>
+                    </div>
+                </a>
+            </li>
+            <li class="res-item bg-white p-3 box-shadow">
+                <a class="inline-block" href="#">
+                    <div class="res-pic mb-2"><img
+                            src="./assets/images/restarunt_3.png"
+                            alt="馬蹄蛤生態休閒園區"></div>
+                    <h3 class="font-s mb-7 mb-md-1 text-height"><span
+                            class="d-md-none">雲林 /
+                            馬蹄蛤生態休閒園區(獲選參加2010台灣美食展...</span><span
+                            class="d-none d-md-block">正濱漁港懷舊碼頭</span></h3>
+                    <div class="d-flex align-center">
+                        <div class="gps-pic me-1"><img
+                                src="./assets/images/gps_pink2.png" alt="gps">
+                        </div>
+                        <div class="font-xs text-third">基隆市中正區</div>
+                    </div>
+                </a>
+            </li>
+            <li class="res-item bg-white p-3 box-shadow">
+                <a class="inline-block" href="#">
+                    <div class="res-pic mb-2"><img
+                            src="./assets/images/restarunt_4.png" alt="正濱漁港懷舊碼">
+                    </div>
+                    <h3 class="font-s mb-7 mb-md-1 text-height">正濱漁港懷舊碼頭
+                    </h3>
+                    <div class="d-flex align-center">
+                        <div class="gps-pic me-1"><img
+                                src="./assets/images/gps_pink2.png" alt="gps">
+                        </div>
+                        <div class="font-xs text-third">基隆市中正區</div>
+                    </div>
+                </a>
+            </li>
+            <li class="res-item bg-white p-3 box-shadow">
+                <a class="inline-block" href="#">
+                    <div class="res-pic mb-2"><img
+                            src="./assets/images/restarunt_5.png"
+                            alt="馬蹄蛤生態休閒園區"></div>
+                    <h3 class="font-s mb-7 mb-md-1 text-height"><span
+                            class="d-md-none">雲林 /
+                            馬蹄蛤生態休閒園區(獲選參加2010台灣美食展...</span><span
+                            class="d-none d-md-block">正濱漁港懷舊碼頭</span></h3>
+                    <div class="d-flex align-center">
+                        <div class="gps-pic me-1"><img
+                                src="./assets/images/gps_pink2.png" alt="gps">
+                        </div>
+                        <div class="font-xs text-third">基隆市中正區</div>
+                    </div>
+                </a>
+            </li>
+            <li class="res-item bg-white p-3 box-shadow">
+                <a class="inline-block" href="#">
+                    <div class="res-pic mb-2"><img
+                            src="./assets/images/restarunt_1.png" alt="正濱漁港懷舊碼">
+                    </div>
+                    <h3 class="font-s mb-7 mb-md-1 text-height"><span
+                            class="d-md-none">雲林 /
+                            馬蹄蛤生態休閒園區(獲選參加2010台灣美食展...</span><span
+                            class="d-none d-md-block">正濱漁港懷舊碼頭</span></h3>
+                    <div class="d-flex align-center">
+                        <div class="gps-pic me-1"><img
+                                src="./assets/images/gps_pink2.png" alt="gps">
+                        </div>
+                        <div class="font-xs text-third">基隆市中正區</div>
+                    </div>
+                </a>
+            </li>
+            <li class="res-item bg-white p-3 box-shadow">
+                <a class="inline-block" href="#">
+                    <div class="res-pic mb-2"><img
+                            src="./assets/images/restarunt_2.png"
+                            alt="馬蹄蛤生態休閒園區"></div>
+                    <h3 class="font-s mb-7 mb-md-1 text-height"><span
+                            class="d-md-none">雲林 /
+                            馬蹄蛤生態休閒園區(獲選參加2010台灣美食展...</span><span
+                            class="d-none d-md-block">正濱漁港懷舊碼頭</span></h3>
+                    <div class="d-flex align-center">
+                        <div class="gps-pic me-1"><img
+                                src="./assets/images/gps_pink2.png" alt="gps">
+                        </div>
+                        <div class="font-xs text-third">基隆市中正區</div>
+                    </div>
+                </a>
+            </li>
+            <li class="res-item bg-white p-3 box-shadow">
+                <a class="inline-block" href="#">
+                    <div class="res-pic mb-2"><img
+                            src="./assets/images/restarunt_3.png"
+                            alt="馬蹄蛤生態休閒園區"></div>
+                    <h3 class="font-s mb-7 mb-md-1 text-height"><span
+                            class="d-md-none">雲林 /
+                            馬蹄蛤生態休閒園區(獲選參加2010台灣美食展...</span><span
+                            class="d-none d-md-block">正濱漁港懷舊碼頭</span></h3>
+                    <div class="d-flex align-center">
+                        <div class="gps-pic me-1"><img
+                                src="./assets/images/gps_pink2.png" alt="gps">
+                        </div>
+                        <div class="font-xs text-third">基隆市中正區</div>
+                    </div>
+                </a>
+            </li>
+            <li class="res-item bg-white p-3 box-shadow">
+                <a class="inline-block" href="#">
+                    <div class="res-pic mb-2"><img
+                            src="./assets/images/restarunt_4.png" alt="正濱漁港懷舊碼">
+                    </div>
+                    <h3 class="font-s mb-7 mb-md-1 text-height"><span
+                            class="d-md-none">雲林 /
+                            馬蹄蛤生態休閒園區(獲選參加2010台灣美食展...</span><span
+                            class="d-none d-md-block">正濱漁港懷舊碼頭</span></h3>
+                    <div class="d-flex align-center">
+                        <div class="gps-pic me-1"><img
+                                src="./assets/images/gps_pink2.png" alt="gps">
+                        </div>
+                        <div class="font-xs text-third">基隆市中正區</div>
+                    </div>
+                </a>
+            </li>
+            <li class="res-item bg-white p-3 box-shadow">
+                <a class="inline-block" href="#">
+                    <div class="res-pic mb-2"><img
+                            src="./assets/images/restarunt_5.png"
+                            alt="馬蹄蛤生態休閒園區"></div>
+                    <h3 class="font-s mb-7 mb-md-1 text-height"><span
+                            class="d-md-none">雲林 /
+                            馬蹄蛤生態休閒園區(獲選參加2010台灣美食展...</span><span
+                            class="d-none d-md-block">正濱漁港懷舊碼頭</span></h3>
+                    <div class="d-flex align-center">
+                        <div class="gps-pic me-1"><img
+                                src="./assets/images/gps_pink2.png" alt="gps">
+                        </div>
+                        <div class="font-xs text-third">基隆市中正區</div>
+                    </div>
+                </a>
+            </li>
+            <li
+                class="res-item bg-white p-3 box-shadow d-none d-md-block d-sm-none">
+                <a class="inline-block" href="#">
+                    <div class="res-pic mb-2"><img
+                            src="./assets/images/restarunt_1.png" alt="正濱漁港懷舊碼">
+                    </div>
+                    <h3 class="font-s mb-7 mb-md-1 text-height">正濱漁港懷舊碼頭
+                    </h3>
+                    <div class="d-flex align-center">
+                        <div class="gps-pic me-1"><img
+                                src="./assets/images/gps_pink2.png" alt="gps">
+                        </div>
+                        <div class="font-xs text-third">基隆市中正區</div>
+                    </div>
+                </a>
+            </li>
+            <li
+                class="res-item bg-white p-3 box-shadow d-none d-md-block d-sm-none">
+                <a class="inline-block" href="#">
+                    <div class="res-pic mb-2"><img
+                            src="./assets/images/restarunt_2.png"
+                            alt="馬蹄蛤生態休閒園區"></div>
+                    <h3 class="font-s mb-7 mb-md-1 text-height"><span
+                            class="d-md-none">雲林 /
+                            馬蹄蛤生態休閒園區(獲選參加2010台灣美食展...</span><span
+                            class="d-none d-md-block">正濱漁港懷舊碼頭</span></h3>
+                    <div class="d-flex align-center">
+                        <div class="gps-pic me-1"><img
+                                src="./assets/images/gps_pink2.png" alt="gps">
+                        </div>
+                        <div class="font-xs text-third">基隆市中正區</div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+        
+        <div class="d-flex justify-center align-center">
+            <ul
+                class="pagination pagination-food d-flex justify-start align-center flex-wrap pe-13 ps-md-3 pe-md-19">
+                <li class="pagination-item mb-2">1</li>
+                <li class="pagination-item mb-2">2</li>
+                <li class="pagination-item mb-2">3</li>
+                <li class="pagination-item mb-2">4</li>
+            </ul>
+        </div>
+    </div>
+</div>
+</div>

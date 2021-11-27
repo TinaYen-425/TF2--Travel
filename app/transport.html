@@ -1,0 +1,119 @@
+---
+title: 景點交通
+layout: ./app/layout.ejs
+engine: ejs
+current: transport
+---
+<div
+    class="d-flex align-center justify-center box-shadow box-shadow-sm-none pt-md-9 pt-sm-0 d-sm-block">
+    <div class="d-flex flex-column align-center d-sm-block">
+        <div class="form-transport box-sm-shadow mb-sm-1 pb-sm-4">
+            <div
+                class="d-flex justify-between justify-md-center align-center mb-10 mb-md-6 mb-sm-0 justify-sm-start ps-sm-4 p-relative">
+                <select class="form-control form-control-item font-m me-2"
+                    name="" id="">
+                    <option value="選擇縣市" disabled selected hidden>選擇縣市
+                    </option>
+                </select>
+                <select class="form-control form-control-item font-m" name=""
+                    id="">
+                    <option value="選擇路線" disabled selected hidden>選擇路線
+                    </option>
+                </select>
+                <div
+                    class="icon-pic icon-pic--find d-none d-md-none d-sm-block p-absolute">
+                    <a href="#"><img class="icon-pic-find"
+                            src="./assets/images/Frame 42.png"
+                            alt="frame_42"></a>
+                </div>
+                <div class="d-sm-block d-none d-md-none ms-sm-2"><a
+                        class="admit" href="#">送出</a></div>
+                <div
+                    class="icon-pic icon-pic--location d-sm-block d-none d-md-none p-absolute">
+                    <a href="#"><img class="icon-pic-location"
+                            src="./assets/images/Frame 105.png"
+                            alt="frame_105"></a>
+                </div>
+
+            </div>
+        </div>
+        <div class="bg-sm-grey">
+            <div class="d-flex box-sm-shadow rounded-sm-s bg-sm-white mx-sm-4 mb-sm-1">
+                <div
+                    class="busSite text-center font-m pb-3 py-sm-3 me-21 me-md-6 me-sm-0">
+                    往<a class="text-primary inline-block ms-2 ms-sm-1"
+                        href="#">蘭潭</a></div>
+                <div class="busSite pb-3 py-sm-3 text-center font-m">往<a
+                        class="text-primary inline-block ms-2 ms-sm-1"
+                        href="#">港坪運動公園</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="bg-grey">
+    <div class="px-40 px-md-6 px-sm-4 pb-21 pb-md-16 pb-sm-5 pt-11 pt-sm-1">
+        <p class="font-m text-primary text-right mb-3 mb-md-2">*每隔 15 秒自動更新</p>
+        <div
+            class="d-flex align-center justify-center bg-white box-shadow d-sm-block bg-sm-grey box-shadow-sm-none">
+            <ul
+                class="timeLine d-flex flex-wrap justify-center pt-8 pb-12 pb-sm-0 d-sm-block pt-sm-3 ">
+                <li class="d-flex mb-8 d-sm-block  mb-sm-4">
+                    <div class="d-flex align-center me-10 mb-sm-4">
+                        <div class="timeCount unGo me-8">未發車</div>
+                        <p class="site font-m">港坪運動公園</p>
+                    </div>
+                    <div class="d-flex align-center">
+                        <div class="timeCount time me-8">16:28</div>
+                        <p class="site font-m">下山仔頂(大雅商圈)</p>
+                    </div>
+
+                </li>
+                <li class="d-flex mb-8 d-sm-block mb-sm-4">
+                    <div class="d-flex align-center me-10 mb-sm-4">
+                        <div class="timeCount unGo me-8">未發車</div>
+                        <p class="site font-m">文化路口</p>
+                    </div>
+                    <div class="d-flex align-center">
+                        <div class="timeCount time me-8">16:38</div>
+                        <p class="site font-m">市政府(吳鳳北路)</p>
+                    </div>
+
+                </li>
+                <li class="d-flex mb-8 d-sm-block mb-sm-4">
+                    <div class="d-flex align-center me-10 mb-sm-4">
+                        <div class="timeCount arrive me-8">進站中</div>
+                        <p class="site font-m">嘉樂福觀光夜市</p>
+                    </div>
+                    <div class="d-flex align-center">
+                        <div class="timeCount time me-8">16:48</div>
+                        <p class="site font-m">檜意生活村(北門)</p>
+                    </div>
+
+                </li>
+                <li class="d-flex mb-8 d-sm-block mb-sm-4">
+                    <div class="d-flex align-center me-10 mb-sm-4">
+                        <div class="timeCount time me-8">16:16</div>
+                        <p class="site font-m">北香湖公園</p>
+                    </div>
+                    <div class="d-flex align-center">
+                        <div class="timeCount leave me-8">離站中</div>
+                        <p class="site font-m">自由友忠路口</p>
+                    </div>
+
+                </li>
+                <li class="d-flex  d-sm-block mb-sm-4">
+                    <div class="d-flex align-center me-10 mb-sm-4">
+                        <div class="timeCount time me-8">16:20</div>
+                        <p class="site font-m">秀泰影城</p>
+                    </div>
+                    <div class="d-flex align-center">
+                        <div class="timeCount arrive me-8">進站中</div>
+                        <p class="site font-m">蘭潭國小</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,239 @@
+@mixin pad{
+    @media(max-width: 768px){
+       @content;
+    }
+}
+
+@mixin iphone{
+    @media(max-width: 360px){
+       @content;
+    } 
+}
+
+// banner的input
+.form{
+    width: 496px;
+    @include iphone(){
+        width: 100%;
+    }
+}
+.form-transport{
+    width: 540px;
+    @include pad(){
+        width: 79%;
+    }
+    @include iphone(){
+        width: 100%;
+    }
+}
+.form-control{
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 6px ;
+    box-shadow: 0px 4px 3px 0px #0D0B0C33;
+    border-width: 0px;
+    &:focus{
+        outline: 3px solid $grey;
+    }
+    font-size: 16px;
+}
+.form-control-find{
+    width: 90%; 
+    text-indent: 24px;
+    @include pad(){
+        width: 78%;
+    }
+
+}
+.form-control-select{
+    width: 90%; 
+    text-indent: 24px;
+    @include pad(){
+        width: 78%;
+    }
+    @include iphone(){
+        width: 100%;
+    }
+}
+
+.form-control-item{
+    width: 49%;
+    text-indent: 16px;
+    @include iphone(){
+        width: 135px;
+    }
+}
+
+//banner 特殊圖案
+.icon-pic{
+    @include iphone(){
+        width: auto;
+    }
+    .icon-pic-location{
+        width: 40px;
+        height: 40px;
+        @include iphone(){
+            top: -100px;
+            left: 286px;
+        }
+    }
+    .icon-pic-find{
+        width: 42px;
+        height: 40px;
+        margin-left: 3px;
+        @include iphone(){
+            top: -100px;
+            left: 246px;
+        }
+    }
+}
+.ellipse{
+    width: 29px;
+    height: 29px;
+    border: 6px solid #FF1D6C;
+    border-radius: 100%;
+    top: 36px;
+    left: 128px;
+
+}
+.square{
+    width: 28px;
+    height: 28px;
+    border: 6px solid #FF1D6C;
+    top: 36px;
+    left: 277px;
+}
+.i-icon{
+width: 8px;
+height: 32px;
+background-color: $primary;
+position: relative;
+top: 33px;
+left: 370px;
+ .i-triangle{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: transparent transparent  $primary transparent ;
+    border-width: 0px 12px 20px 12px;
+    position: absolute;
+    top: -27px;
+    right: -9px;
+    transform:rotate(20deg);
+}
+}
+
+//header menu icon
+.menu-primary{
+    width: 34px;
+    height: 34px;
+    border: 15px solid #FF1D6C;
+    border-radius: 100%;
+    background-color: $primary;
+    position: relative;
+    &:hover {
+        transform:scale(1.1);
+    }
+    .menu-primary-inner{
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-color: $primary $primary $white $primary;
+        border-width: 0 5px 10px 5px;
+        position: absolute;
+        top: -3px;
+        right: -3px;
+    }
+}
+.menu-secondary{
+    width: 34px;
+    height: 34px;
+    border: 15px solid $secondary;
+    border-radius: 100%;
+    background-color: $secondary;
+    position: relative;
+    &:hover {
+        transform:scale(1.1);
+    }
+    .menu-secondary-inner{
+        width: 8px;
+        height: 8px;
+        border-style: solid;
+        border-color: $white;
+        background-color: $white;
+        position: absolute;
+        top: -2px;
+        right: -2px;
+    }
+
+}
+.menu-third{
+    width: 34px;
+    height: 34px;
+    border: 15px solid $third;
+    border-radius: 100%;
+    background-color: $third;
+    position: relative;
+    &:hover {
+        transform:scale(1.1);
+    }
+    .menu-third-inner{
+        width: 10px;
+        height: 10px;
+        background-color: $white;
+        border-color: $white;
+        border-style: solid;
+        border-radius: 100%;
+        position: absolute;
+        top: -3px;
+        right: -3px;
+    }
+
+}
+.admit{
+    cursor: pointer;
+    background: $primary;
+    color: $white;
+    font-family: $font-primary;
+    font-size: $font-s;
+    width: 40px;
+    height: 40px;
+    display: block;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 6px;
+    box-shadow: 0px 2px 4px 0px #0D0B0C33;
+}
+
+.tag-primary{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: transparent transparent  $primary transparent ;
+    border-width: 0px 12px 20px 12px;
+}
+.tag-secondary{
+    width: 20px;
+    height: 20px;
+    background: $secondary;
+}
+.scroll{
+    width: 32px;
+    height: 32px;
+    background: #0D0B0C;
+    box-shadow: 0px 4px 3px 0px #0D0B0C33;
+    border-radius: 6px;
+    cursor: pointer;
+    top: 100px;
+    left: 21px;
+    .right{
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-color: transparent transparent transparent white;
+        border-width: 5px 0px 5px 7px;
+        top: 10px;
+        left: 13px;
+    }
+}
